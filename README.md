@@ -22,21 +22,29 @@ It allows you to search for cities, view detailed weather information, switch be
 ```bash
 git clone https://github.com/your-username/weather-app.git
 cd weather-app
+```
 
-2. Install dependencies
+### 2. Install dependencies
+
+```bash
 yarn
+```
 
-3. Create a .env file in the root of the project
+### 3. Create a .env file in the root of the project
+```bash
 VITE_OPENWEATHER_API_KEY=your_api_key_here
+```
 
 You can get a free API key from https://openweathermap.org/api
 
-4. Start the development server
+### 4. Start the development server
+```bash
 yarn dev
+```
 
 The app will be running at http://localhost:5173
 
-⚙️ Tech Stack
+### ⚙️ Tech Stack
   ⚡️ Vite
 
   ⚛️ React
@@ -53,7 +61,7 @@ The app will be running at http://localhost:5173
 
   🔔 Notistack
 
-🧩 Features
+### 🧩 Features
   🔍 Search for any city
 
   📊 Display current weather details
@@ -68,10 +76,10 @@ The app will be running at http://localhost:5173
 
   📱 Responsive design
 
-🙌 Credits
+### 🙌 Credits
 Thanks to OpenWeatherMap for providing the weather data API.
 
-Built with ❤️, ☕️, and lots of code.
+Built with ❤️, 🍪, and lots of code.
 
 
 
