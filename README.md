@@ -20,7 +20,7 @@ It allows you to search for cities, view detailed weather information, switch be
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/weather-app.git
+https://github.com/cristianilazi7/weather-app.git
 cd weather-app
 ```
 
