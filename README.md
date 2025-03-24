@@ -1,54 +1,87 @@
-# React + TypeScript + Vite
+# 🌤️ Weather App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern weather application built with **Vite**, **React**, **TypeScript**, **Styled Components**, **Redux Toolkit**, and **TanStack Query**.  
+It allows you to search for cities, view detailed weather information, switch between Celsius and Fahrenheit, and maintains a local history of recent searches using `redux-persist`.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📸 Screenshots
 
-## Expanding the ESLint configuration
+### 🌡️ Celsius Mode  
+![Celsius](./screenshots/celsius-view.png)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### 🌡️ Fahrenheit Mode  
+![Fahrenheit](./screenshots/fahrenheit-view.png)
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/cristianilazi7/weather-app.git
+cd weather-app
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 2. Install dependencies
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```bash
+yarn
 ```
+
+### 3. Create a .env file in the root of the project
+```bash
+VITE_OPENWEATHER_API_KEY=your_api_key_here
+```
+
+You can get a free API key from https://openweathermap.org/api
+
+### 4. Start the development server
+```bash
+yarn dev
+```
+
+The app will be running at http://localhost:5173
+
+### ⚙️ Tech Stack
+  ⚡️ Vite
+
+  ⚛️ React
+
+  🔐 TypeScript
+
+  💅 Styled Components
+
+  📦 Redux Toolkit + Persist
+
+  🔍 TanStack Query (React Query)
+
+  💨 Material UI
+
+  🔔 Notistack
+
+### 🧩 Features
+  🔍 Search for any city
+
+  📊 Display current weather details
+
+  🔄 Toggle between °C and °F
+
+  💾 Persistent search history (last 5 locations)
+
+  🧠 State management via Redux Toolkit
+
+  🔔 Notifications on success or failure
+
+  📱 Responsive design
+
+### 🙌 Credits
+Thanks to OpenWeatherMap for providing the weather data API.
+
+Built with ❤️, 🍪, and lots of code.
+
+
+
+
+
